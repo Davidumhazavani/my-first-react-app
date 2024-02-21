@@ -1,7 +1,10 @@
 import "./App.css";
+import PropTypes from 'prop-types';
+import Greeting from "./Components/Greeting/Greeting";
 import NavBar from "./Components/NavBar";
 import image from "./assets/about-bread.png";
 import image2 from "./assets/home-bread.png";
+import State from "./Components/State";
 
 function App() {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -16,6 +19,8 @@ function App() {
   return (
     <div>
       <NavBar />
+      <Greeting/>
+      <State/>
       {arr.map((items, i) => (
         <p key={i}>{items}</p>
       ))}
